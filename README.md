@@ -6,10 +6,10 @@ https://codesandbox.io/ <br />
 – – – – - <br />
 without JSX :
   ```
-    const App = () => {
-      return React.createElement("h1", {id:'hello, className: 'cls1'},'App')
-    }
-    ReactDOM.render(React.createElement(App), document.getElementById('root'))
+ReactDOM.render(
+  React.createElement('div', null, 'Hello World'),
+  document.getElementById('root')
+);
   ```
 jsx - syntax extentions for js
 
