@@ -7,8 +7,8 @@ https://codesandbox.io/ <br />
 without JSX :
   ```
 ReactDOM.render(
-  React.createElement('div', null, 'Hello World'),
-  document.getElementById('root')
+    React.createElement('div', null, 'Hello World'),
+    document.getElementById('root')
 );
   ```
 jsx - syntax extentions for js
