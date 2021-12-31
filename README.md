@@ -7,7 +7,7 @@ https://codesandbox.io/ <br />
 without JSX :
   ```
 ReactDOM.render(
-    React.createElement('div', null, 'Hello World'),
+    React.createElement('div', {className:'sex '}, 'Hello World'),
     document.getElementById('root')
 );
   ```
