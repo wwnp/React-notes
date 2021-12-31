@@ -16,15 +16,5 @@ ReactDOM.render(
   ```
 jsx - syntax extentions for js
 ```
-index.js:
-import ReactDOM from "react-dom";
-import { React } from "react";
-import {App} from './App'
-
-ReactDOM.render(<App />, document.getElementById("root"));
------
-App.jsx
-export const App = (props) => {
-  return <h1>App</h1>;
-};
+https://codesandbox.io/s/react-quick-start-p7m0g
 ```
