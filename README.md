@@ -2,7 +2,7 @@
 npx create-react-app project_name (new dir) <br />
 npx create-react-app .project_name <br />
 or <br/>
-https://codesandbox.io/ <br />
+https://codesandbox.io/s/react-quick-start-p7m0g <br />
 – – – – - <br />
 without JSX :
   ```
@@ -18,6 +18,5 @@ jsx - syntax extentions for js; шаблонизатор( есть еще pug(fo
 inside {}: <br />
 not permitted instructions: if ,switch, for,while <br />
 permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
-```
-https://codesandbox.io/s/react-quick-start-p7m0g
-```
+
+
