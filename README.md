@@ -14,7 +14,7 @@ ReactDOM.render(
     document.getElementById('root')
 );
   ```
-jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...)
+jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...) <br />
 inside {}: <br />
 not permitted instructions: if ,switch, for,while <br />
 permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
