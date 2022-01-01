@@ -15,9 +15,9 @@ ReactDOM.render(
 );
   ```
 jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...)
-{}
-not permitted instructions: if ,switch, for,while
-permitted expression: fn(), exp ? [ifTrue] : [ifFalse]
+inside {}: <br />
+not permitted instructions: if ,switch, for,while <br />
+permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
 ```
 https://codesandbox.io/s/react-quick-start-p7m0g
 ```
