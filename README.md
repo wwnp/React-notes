@@ -4,9 +4,8 @@ npx create-react-app .project_name <br />
 or <br/>
 https://codesandbox.io/s/react-quick-start-p7m0g <br />
 – – – – - <br />
- :
 <details>
-  <summary>.without JSX</summary>
+  <summary>without JSX</summary>
   <p>
     
     ReactDOM.render(
@@ -19,9 +18,17 @@ https://codesandbox.io/s/react-quick-start-p7m0g <br />
     
   </p>
 </details>
-jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...) <br />
-inside {}: <br />
-not permitted instructions: if ,switch, for,while <br />
-permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
+<details>
+  <summary>jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...)</summary>
+  <p>
+    
+  inside {}: <br />
+  not permitted instructions: if ,switch, for,while <br />
+  permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
+    
+  </p>
+</details>
+
+
 
 
