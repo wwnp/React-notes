@@ -4,16 +4,21 @@ npx create-react-app .project_name <br />
 or <br/>
 https://codesandbox.io/s/react-quick-start-p7m0g <br />
 – – – – - <br />
-without JSX :
-  ```
-ReactDOM.render(
-    React.createElement('div', {className:'App', sex:'sex'}, [
-      React.createElement('h1', null, 'App'),
-      React.createElement('p', null, '2010')
-    ]),
-    document.getElementById('root')
-);
-  ```
+ :
+<details>
+  <summary>.without JSX</summary>
+  <p>
+    
+    ReactDOM.render(
+        React.createElement('div', {className:'App', sex:'sex'}, [
+          React.createElement('h1', null, 'App'),
+          React.createElement('p', null, '2010')
+        ]),
+        document.getElementById('root')
+    );
+    
+  </p>
+</details>
 jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...) <br />
 inside {}: <br />
 not permitted instructions: if ,switch, for,while <br />
