@@ -37,7 +37,7 @@
   </p>
 </details>
 
-### Do not lose this:
+#### Do not lose this:
 <details>
   <summary>1. binding in constructor </summary>
   <p>
@@ -56,7 +56,7 @@
   <summary>2. binding in onClick </summary>
   <p>
     
-  this.counterHandler.bind(this)
+  <button onClick={this.counterHandler.bind(this)}>Add</button>
     
   </p>
 </details>
