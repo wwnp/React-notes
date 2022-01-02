@@ -71,6 +71,7 @@
             console.log("cb counter 1");
           }
         );
+    
         // short -v (without return)
         this.setState(
           (prevState) => ({ counter: prevState.counter + 1 }),
@@ -95,9 +96,9 @@
               HomeClass
             </h1>
             <p>{this.state.counter}</p>
-            {/*  *2 */}
+            
             <button onClick={this.counterHandler.bind(this)}>Add</button>
-            {/*  *3 */}
+            {/*  or  */}
             <button onClick={() => this.counterHandler}>Add</button>
           </div>
         );
