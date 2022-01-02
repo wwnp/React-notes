@@ -134,7 +134,7 @@
   <summary>3. use arrow in onCLick</summary>
   <p>
     
-    <button onClick={() => this.counterHandler}>Add</button>
+    <button onClick={() => this.counterHandler()}>Add</button>
     
   </p>
 </details>
