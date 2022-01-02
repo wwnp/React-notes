@@ -58,7 +58,7 @@
   <summary>2. binding in onClick </summary>
   <p>
     
-  <button onClick={this.counterHandler.bind(this)}>Add</button>
+    <button onClick={this.counterHandler.bind(this)}>Add</button>
     
   </p>
 </details>
@@ -74,11 +74,11 @@
   <summary>4. use arrow fn</summary>
   <p>
     
-  const = counterHandler = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    });
-    
+    const = counterHandler = () => {
+      this.setState({
+        counter: this.state.counter + 1
+      });
+    }
   </p>
 </details>
 
