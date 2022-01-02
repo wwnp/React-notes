@@ -37,18 +37,7 @@
   </p>
 </details>
 
-// Do not lose this:
-// 
-// 2
-//  2.1  (this.counterHandler.bind(this) ) *2 
-//  2.2 use () => this.counterHandler() *3
-// 3 use arrow fn
-//  const = counterHandler = (vector) {
-//   this.setState({
-//     counter: this.state.counter + 1
-//   });
-// }
-
+###Do not lose this:
 <details>
   <summary>1. binding in constructor </summary>
   <p>
