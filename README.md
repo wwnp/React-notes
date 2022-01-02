@@ -45,16 +45,7 @@
   <p>
     
     import React from "react";
-    // Do not lose this:
-    // 1. binding in constructor *1
-    // 2 binding in onCLick (this.counterHandler.bind(this) ) *2 
-    // 3 use () => this.counterHandler() *3
-    // 4 use arrow fn
-    //  const = counterHandler = (vector) {
-    //   this.setState({
-    //     counter: this.state.counter + 1
-    //   });
-    // }
+
     export class HomeClass extends React.Component {
       state = { counter: 0 };
       // or
@@ -72,27 +63,27 @@
         });
 
         // to add 3 to counter at once
-        // this.setState(
-        //   (prevState) => {
-        //     return { counter: prevState.counter + 1 };
-        //   },
-        //   () => {
-        //     console.log("cb counter 1");
-        //   }
-        // );
-        // // short -v (without return)
-        // this.setState(
-        //   (prevState) => ({ counter: prevState.counter + 1 }),
-        //   () => {
-        //     console.log("cb counter 2");
-        //   }
-        // );
-        // this.setState(
-        //   (prevState) => ({ counter: prevState.counter + 1 }),
-        //   () => {
-        //     console.log("cb counter 3");
-        //   }
-        // );
+        this.setState(
+          (prevState) => {
+            return { counter: prevState.counter + 1 };
+          },
+          () => {
+            console.log("cb counter 1");
+          }
+        );
+        // short -v (without return)
+        this.setState(
+          (prevState) => ({ counter: prevState.counter + 1 }),
+          () => {
+            console.log("cb counter 2");
+          }
+        );
+        this.setState(
+          (prevState) => ({ counter: prevState.counter + 1 }),
+          () => {
+            console.log("cb counter 3");
+          }
+        );
       }
       render() {
         return (
