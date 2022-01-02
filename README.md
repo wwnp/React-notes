@@ -37,6 +37,56 @@
   </p>
 </details>
 
+// Do not lose this:
+// 
+// 2
+//  2.1  (this.counterHandler.bind(this) ) *2 
+//  2.2 use () => this.counterHandler() *3
+// 3 use arrow fn
+//  const = counterHandler = (vector) {
+//   this.setState({
+//     counter: this.state.counter + 1
+//   });
+// }
 
-
-
+<details>
+  <summary>1. binding in constructor </summary>
+  <p>
+    
+    constructor(props) {
+      super(props);
+      this.state = {
+        counter: 0
+      };
+      this.counterHandler = this.counterHandler.bind(this) // *1
+    }
+    
+  </p>
+</details>
+<details>
+  <summary>2. binding in onClick </summary>
+  <p>
+    
+  this.counterHandler.bind(this)
+    
+  </p>
+</details>
+<details>
+  <summary>3. use arrow in onCLick</summary>
+  <p>
+    
+    <button onClick={() => this.counterHandler}>Add</button>
+    
+  </p>
+</details>
+<details>
+  <summary>4. use arrow fn</summary>
+  <p>
+    
+  const = counterHandler = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    });
+    
+  </p>
+</details>
