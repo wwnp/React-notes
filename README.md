@@ -1,9 +1,17 @@
 
-npx create-react-app project_name (new dir) <br />
-npx create-react-app .project_name <br />
-or <br/>
-https://codesandbox.io/s/react-quick-start-p7m0g <br />
-– – – – - <br />
+<details>
+  <summary>NPM NPX</summary>
+  <p>
+    
+  npx create-react-app project_name (new dir) <br />
+  npx create-react-app .project_name <br />
+  npm start <br />
+  npm run build <br />
+    
+  https://codesandbox.io/s/react-quick-start-p7m0g <br />
+  </p>
+</details>
+
 <details>
   <summary>without JSX</summary>
   <p>
