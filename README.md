@@ -152,4 +152,91 @@
 
 <hr /> 
 
-ref - ссылка на пределенный элемент в доме
+
+<details>
+  <summary>ref - ссылка на пределенный элемент в доме</summary>
+  <p>
+    export class FormClassPage extends React.Component {
+      constructor(props) {
+        super(props)
+        this.state = {
+          ...
+        };
+        this.firstNameRef = React.createRef() // for focus()
+        this.emailRef = React.createRef()  // for focus()
+
+        this.cardRef = React.createRef() // uncontrollable input
+        this.telRef = React.createRef()// uncontrollable input
+      }
+      handleInputs = (event) => {
+        this.setState({
+          [event.target.name]: event.target.value
+        }, () => {
+          if (this.state.firstName.length === 16) { // for bank card
+            this.emailRef.current.focus()
+          }
+        });
+      };
+
+      render() {
+        return (
+           <div>
+              <input
+                name={"firstName"}
+                placeholder={"first name"}
+                type="text"
+                value={this.state.firstName}
+                onChange={this.handleInputs}
+                onBlur={this.validateName}
+                ref={this.firstNameRef}
+              />
+              <br />
+              <input
+                name={"email"}
+                placeholder={"email"}
+                type="email"
+                value={this.state.email}
+                onChange={this.handleInputs}
+                onBlur={this.validateEmail}
+                ref={this.emailRef}
+              />
+            </div>
+            <hr />
+            <form onSubmit={this.formCardSubmit}>
+              <input
+                name={"card"}
+                placeholder={"card"}
+                type="text"
+                ref={this.cardRef}
+              />
+              <input
+                name={"tel"}
+                placeholder={"tel"}
+                type="tel"
+                ref={this.telRef}
+              />
+              <button>Send</button>
+            </form >
+          </div>
+        );
+      }
+      // --------------
+      formCardSubmit = (e) => {
+        console.log(this.cardRef.current)
+        e.preventDefault()
+        if (this.cardRef.current.value.length < 16) {
+          alert('this.cardRef.current.value.length < 16')
+          return
+        }
+        if (this.telRef.current.value.length < 11) {
+          alert('this.telRef.current.value.length < 11')
+          return
+        }
+        this.cardRef.current.value = ''
+        this.telRef.current.value = ''
+        alert('data sent')
+      }
+    }
+       
+  </p>
+</details>
