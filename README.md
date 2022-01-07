@@ -161,9 +161,9 @@
       constructor(props) {
         super(props)
         this.state = {
+          firstName: "",
           ...
         };
-        this.firstNameRef = React.createRef() // for focus()
         this.emailRef = React.createRef()  // for focus()
 
         this.cardRef = React.createRef() // uncontrollable input
@@ -188,8 +188,6 @@
                 type="text"
                 value={this.state.firstName}
                 onChange={this.handleInputs}
-                onBlur={this.validateName}
-                ref={this.firstNameRef}
               />
               <br />
               <input
@@ -198,7 +196,6 @@
                 type="email"
                 value={this.state.email}
                 onChange={this.handleInputs}
-                onBlur={this.validateEmail}
                 ref={this.emailRef}
               />
             </div>
