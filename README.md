@@ -156,6 +156,7 @@
 <details>
   <summary>ref - ссылка на пределенный элемент в доме</summary>
   <p>
+    
     export class FormClassPage extends React.Component {
       constructor(props) {
         super(props)
