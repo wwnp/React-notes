@@ -242,7 +242,100 @@
   <summary>useState</summary>
   <p>
     
-    const [count, setCount] = useState(0)        
+    export const App = props => {
+      const [count, setCount] = useState(0)      
+      const add = () => {
+    
+      }
+      return (
+        <div >
+        
+        </div>
+      )
+    }
+      
     
   </p>
 </details>
+
+<details>
+  <summary>materialize CSS React</summary>
+  <p>
+    
+    With NPM:
+
+    Step 1) Install materialize
+
+    npm install materialize-css@next 
+    Check the materialize documentation for any updates. Don't miss the @next at the end. The installed version will be something like: ^1.0.0-rc.2 or ^1.0.0-alpha.4
+
+    Step 2) Import materialize JS:
+
+    import M from 'materialize-css'
+    Or if that doesn't work you can try import M from 'materialize-css/dist/js/materialize.min.js'
+
+    Step 3) Import materialize CSS:
+
+    In index.html
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    OR in javascript
+
+    import 'materialize-css/dist/css/materialize.min.css'
+    In order for the css import to work, you would need a css loader. Note that this loader is already included in projects built using create-react-app so you don't need the  next steps. If instead, you are using custom webpack config, then run:
+
+    npm install --save-dev style-loader css-loader
+    Now add css-loader and style-loader in webpack config
+
+    const path = require("path");
+
+    module.exports = {
+        entry: "./src/index.js",
+        output: {
+            filename: "bundle.js",
+            path: path.join(__dirname, "build")
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    use: [
+                        'style-loader',
+                        'css-loader'
+                    ]
+                },
+                {
+                    test: /.js$/,
+                    exclude: /(node_modules)/,
+                    use: {
+                        loader: "babel-loader",
+                        options: {
+                            presets: ["env", "react"]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+    Now you can initialize components individually, or all at once using M.AutoInit();
+
+    Step 4) Import materialize icons:
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    With CDN:
+
+    Add the following in your HTML file.
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    
+  </p>
+</details>
+
