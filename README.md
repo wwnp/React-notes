@@ -15,8 +15,7 @@
 <details>
   <summary>without JSX</summary>
   <p>
-    
-    ReactDOM.render(
+        ReactDOM.render(
         React.createElement('div', {className:'App', sex:'sex'}, [
           React.createElement('h1', null, 'App'),
           React.createElement('p', null, '2010')
@@ -242,6 +241,6 @@
 <details>
   <summary>useState</summary>
   <p>
-    123           
+    const [count, setCount] = useState(0)        
   </p>
 </details>
