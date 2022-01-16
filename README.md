@@ -263,7 +263,7 @@
   <p>
     
     https://stackoverflow.com/a/52548650
-    
+    npm install materialize-css@next
     index.js:
       import "materialize-css/dist/css/materialize.min.css";
       import "materialize-css/dist/js/materialize.min.js";
