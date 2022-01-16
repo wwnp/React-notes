@@ -264,6 +264,9 @@
     
     https://stackoverflow.com/a/52548650
     npm install materialize-css@next
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     index.js:
       import "materialize-css/dist/css/materialize.min.css";
       import "materialize-css/dist/js/materialize.min.js";
