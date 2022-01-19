@@ -7,6 +7,19 @@
   </p>
 </details>
 
+<hr/>
+
+<details>
+  <summary>TEST</summary>
+  <p>
+
+    TEST
+
+  </p>
+</details>
+
+<hr/>
+
 <details>
   <summary>NPM NPX</summary>
   <p>
@@ -20,33 +33,9 @@
   </p>
 </details>
 
-<details>
-  <summary>without JSX</summary>
-  <p>
-        ReactDOM.render(
-        React.createElement('div', {className:'App', sex:'sex'}, [
-          React.createElement('h1', null, 'App'),
-          React.createElement('p', null, '2010')
-        ]),
-        document.getElementById('root')
-    );
-    
-  </p>
-</details>
-<details>
-  <summary>jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...)</summary>
-  <p>
-    
-  inside {}: <br />
-  not permitted instructions: if ,switch, for,while <br />
-  permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
-    
-  </p>
-</details>
-
 <hr /> 
 
-#### Do not lose this:
+###### Do not lose this:
 <details>
   <summary>Example</summary>
   <p>
@@ -115,6 +104,7 @@
     
   </p>
 </details>
+
 <details>
   <summary>1. binding in constructor </summary>
   <p>
@@ -129,6 +119,7 @@
     
   </p>
 </details>
+
 <details>
   <summary>2. binding in onClick </summary>
   <p>
@@ -137,6 +128,7 @@
     
   </p>
 </details>
+
 <details>
   <summary>3. use arrow in onCLick</summary>
   <p>
@@ -145,6 +137,7 @@
     
   </p>
 </details>
+
 <details>
   <summary>4. use arrow fn</summary>
   <p>
@@ -157,8 +150,7 @@
   </p>
 </details>
 
-<hr /> 
-
+<hr/>
 
 <details>
   <summary>ref - ссылка на пределенный элемент в доме</summary>
@@ -245,7 +237,26 @@
        
   </p>
 </details>
+
 <hr/>
+
+<details>
+  <summary>without JSX</summary>
+  <p>
+
+    ReactDOM.render(
+      React.createElement('div', {className:'App', sex:'sex'}, [
+        React.createElement('h1', null, 'App'),
+        React.createElement('p', null, '2010')
+      ]),
+      document.getElementById('root')
+    );
+    
+  </p>
+</details>
+
+<hr/>
+
 <details>
   <summary>useState</summary>
   <p>
@@ -265,6 +276,21 @@
     
   </p>
 </details>
+
+<hr/>
+
+<details>
+  <summary>jsx - syntax extentions for js; шаблонизатор( есть еще pug(former jade), twig ...)</summary>
+  <p>
+    
+  inside {}: <br />
+  not permitted instructions: if ,switch, for,while <br />
+  permitted expression: fn(), exp ? [ifTrue] : [ifFalse] 
+    
+  </p>
+</details>
+
+<hr/>
 
 <details>
   <summary>materialize CSS + JS React</summary>
