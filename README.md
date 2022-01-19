@@ -35,9 +35,8 @@
 
 <hr /> 
 
-###### Do not lose this:
 <details>
-  <summary>Example</summary>
+  <summary>Do not lose this:</summary>
   <p>
     
     import React from "react";
