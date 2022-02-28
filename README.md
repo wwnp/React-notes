@@ -1,5 +1,5 @@
 ### React-summary: https://codesandbox.io/s/react-summary-dzgdm
-е
+test
 <details>
   <summary>TEST</summary>
   <p>
