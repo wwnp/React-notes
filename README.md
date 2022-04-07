@@ -9,15 +9,6 @@
   </p>
 </details>
 
-<details>
-  <summary>TEST</summary>
-  <p>
-
-    TEST
-
-  </p>
-</details>
-
 <hr/>
 
 <details>
