@@ -12,17 +12,6 @@
 <hr/>
 
 <details>
-  <summary>TEST</summary>
-  <p>
-
-    TEST
-
-  </p>
-</details>
-
-<hr/>
-
-<details>
   <summary>NPM NPX</summary>
   <p>
     
